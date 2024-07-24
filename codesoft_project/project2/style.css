@@ -1,0 +1,95 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    width: 340px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+.button {
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button:active {
+    background-color: #ccc;
+}
+
+.button[data-action="clear"] {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.button[data-action="clear"]:hover {
+    background-color: #d32f2f;
+}
+
+.button[data-action="equals"] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.button[data-action="equals"]:hover {
+    background-color: #45a049;
+}
+
+.button[data-action="delete"] {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.button[data-action="delete"]:hover {
+    background-color: #f57c00;
+}
+
+.button[data-action="percent"],
+.button[data-action="divide"],
+.button[data-action="multiply"],
+.button[data-action="subtract"],
+.button[data-action="add"] {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.button[data-action="percent"]:hover,
+.button[data-action="divide"]:hover,
+.button[data-action="multiply"]:hover,
+.button[data-action="subtract"]:hover,
+.button[data-action="add"]:hover {
+    background-color: #1e88e5;
+}
